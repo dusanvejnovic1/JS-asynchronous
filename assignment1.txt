@@ -1,0 +1,26 @@
+this is an array/cond assignment and shouldnt be here, move this to conditionals or basic 
+
+You are given the following array representing test results from different environments:
+
+JavaScript
+const testResults = [
+  { env: "staging", passed: 15, failed: 2, tags: ["api", "login"] },
+  { env: "production", passed: 20, failed: 1, tags: ["api", "payment"] },
+  { env: "staging", passed: 13, failed: 3, tags: ["ui", "login"] },
+  { env: "dev", passed: 18, failed: 4, tags: ["api", "ui"] },
+  { env: "production", passed: 22, failed: 0, tags: ["ui"] }
+];
+Your task:
+Write a function called summarizeResults(testResults) that returns an object with the following structure:
+
+environments:
+An array of environment names, sorted alphabetically, with no duplicates.
+
+totalPassed:
+The sum of all passed test counts.
+
+failedByEnv:
+An object where the keys are environment names, and the values are the total number of failed tests for that environment.
+
+uniqueTags:
+An array of all unique tags used across all results, sorted alphabetically.
